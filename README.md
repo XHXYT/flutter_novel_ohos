@@ -19,7 +19,7 @@
 
 ## 项目地址
 
-<a href='https://github.com/7-bit11/novel_flutter_bit_source'><img alt="Github stars" src="https://img.shields.io/github/stars/7-bit11/novel_flutter_bit_source?logo=github">下载地址</a>
+<a href='https://github.com/XHXYT/flutter_novel_ohos'><img alt="Github stars" src="https://github.com/XHXYT/flutter_novel_ohos/releases/tag/2.1.2">下载地址</a>
 
 ## 支持平台
 
