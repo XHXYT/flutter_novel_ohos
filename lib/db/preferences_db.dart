@@ -16,6 +16,83 @@ import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// shared_preferences
+class SharedPreferencesAsync {
+  // 获取一个 SharedPreferences 实例
+  Future<SharedPreferences> get _prefs async => SharedPreferences.getInstance();
+
+  // 异步读取字符串
+  Future<String?> getString(String key) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.getString(key);
+  }
+
+  // 异步读取布尔值
+  Future<bool?> getBool(String key) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.getBool(key);
+  }
+
+  // 异步读取整数
+  Future<int?> getInt(String key) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.getInt(key);
+  }
+
+  // 异步读取浮点数
+  Future<double?> getDouble(String key) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.getDouble(key);
+  }
+
+  // 异步读取字符串列表
+  Future<List<String>?> getStringList(String key) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.getStringList(key);
+  }
+
+  // 异步保存字符串
+  Future<bool> setString(String key, String value) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.setString(key, value);
+  }
+
+  // 异步保存布尔值
+  Future<bool> setBool(String key, bool value) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.setBool(key, value);
+  }
+
+  // 异步保存整数
+  Future<bool> setInt(String key, int value) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.setInt(key, value);
+  }
+
+  // 异步保存浮点数
+  Future<bool> setDouble(String key, double value) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.setDouble(key, value);
+  }
+
+  // 异步保存字符串列表
+  Future<bool> setStringList(String key, List<String> value) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.setStringList(key, value);
+  }
+
+  // 异步移除键值对
+  Future<bool> remove(String key) async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.remove(key);
+  }
+
+  // 异步清除所有偏好设置
+  Future<bool> clear() async {
+    final SharedPreferences prefs = await _prefs;
+    return prefs.clear();
+  }
+}
+
 class PreferencesDB {
   PreferencesDB._();
   static final PreferencesDB instance = PreferencesDB._();

@@ -1,0 +1,53 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\default_ohos_EraV89JjB1Jgov6tMLO-DxbCkxsgm1Lf2uOxPtpubU8=.cer",
+          "storePassword": "0000001A7E8F212EBD8F9CCF9CED186055EB38744503099B90F1A8C530819C2594AD84118C4A4C4A0C83",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A8F5D7D43C7550BF1D9E6CEAECAE4783599AA403586967E1051E169B41AD73E6087397A935E42",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\default_ohos_EraV89JjB1Jgov6tMLO-DxbCkxsgm1Lf2uOxPtpubU8=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\default_ohos_EraV89JjB1Jgov6tMLO-DxbCkxsgm1Lf2uOxPtpubU8=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sqflite",
+      "srcPath": "../../../../Cache/PUB/git/flutter_sqflite-49e41a72bfcc4644d83a2b0fa5646bf2a0ae116c/sqflite/ohos",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

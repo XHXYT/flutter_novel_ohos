@@ -1,0 +1,24 @@
+{
+  "modelVersion": "5.0.0",
+  "name": "flutter_novel",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@ohos/flutter_ohos": "file:./har/flutter.har"
+  },
+  "devDependencies": {
+    "@ohos/hypium": "1.0.6"
+  },
+  "overrides": {
+    "@ohos/flutter_ohos": "file:./har/flutter.har",
+    "path_provider_ohos": "file:./har/path_provider_ohos.har",
+    "shared_preferences_ohos": "file:./har/shared_preferences_ohos.har",
+    "sqflite": "../../../../Cache/PUB/git/flutter_sqflite-49e41a72bfcc4644d83a2b0fa5646bf2a0ae116c/sqflite/ohos",
+    "image_editor_ohos": "file:./har/image_editor_ohos.har",
+    "photo_manager": "file:./har/photo_manager.har",
+    "@ohos/flutter_module": "file:./entry"
+  }
+}

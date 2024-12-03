@@ -15,6 +15,8 @@
 
 导入阅读书源等。。。
 
+此分支为适配鸿蒙NEXT版本，仅供交流学习使用。
+
 ## 项目地址
 
 <a href='https://github.com/7-bit11/novel_flutter_bit_source'><img alt="Github stars" src="https://img.shields.io/github/stars/7-bit11/novel_flutter_bit_source?logo=github">下载地址</a>
@@ -23,12 +25,8 @@
 
 | 平台                           | 是否支持
 |------------------------------- | ---------------------------
-| Android                        |  ✅
-| IOS                            |  ✅
-| Windows                        |  ✅
-| Web                            |  ❌ 跨域问题
-| MacOS                          |  ✅
-| Linux                          |  ❌
+| HarmonyOS NEXT                       |  ✅
+
 
 ## 项目结构
 
@@ -81,13 +79,13 @@ lib
 | dio                            |  网络请求^5.7.0
 | flutter_svg                    |  SVG^2.0.10+1
 | flutter_staggered_grid_view    |  瀑布流^0.4.1
-| shared_preferences             |  本地存储^2.3.2
+| shared_preferences             |  本地存储^2.2.0(gitee仓库版本)
 | flutter_riverpod               |  状态管理^2.5.1
 | riverpod_annotation            |  ^2.3.5
 | syncfusion_flutter_sliders     |  滑动选择器 ^26.2.14
 | carousel_slider                |  轮播^5.0.0
 | html                           |  ^0.15.4
-| path_provider                  |  本地目录 ^2.1.4
+| path_provider                  |  本地目录 ^2.1.0(gitee仓库版本)
 | flex_color_picker              |  颜色选择器^3.6.0
 | sliver_head_automatic_adsorption| 自动吸附Sliver ^1.0.8
 
